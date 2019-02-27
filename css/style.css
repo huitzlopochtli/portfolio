@@ -1,6 +1,4 @@
-/* =======================================================================
-SAADIA - Personal Resume / CV / Portfolio Html Template 
-======================================================================= */
+
 
 /*
     1. TYPOGRAPHY
@@ -1346,4 +1344,22 @@ p,span,h1,h2,h3,h4,h5,a {
 }
 .contact-nosuccess i {
     color: #e9573f;
+}
+
+.text-bottom-center{
+  position: absolute;
+  bottom: 0;
+  /* left: 0; */
+  right: 0;
+  padding-right: 5px;
+  font-family: inherit;
+}
+
+@media only screen and (max-width: 600px) {
+  .text-bottom-mobile {
+    position: absolute;
+    bottom: 0;
+    padding: 0px 5px 0px 15px;
+    font-family: inherit;
+  }
 }
