@@ -63,6 +63,10 @@ a:hover {
 a:focus {
   text-decoration: none;
 }
+
+
+
+
 p,span,h1,h2,h3,h4,h5,a {
   margin:0;
   letter-spacing: 0.5px;
@@ -1355,8 +1359,14 @@ p,span,h1,h2,h3,h4,h5,a {
   font-family: inherit;
 }
 
+.img-showcase {
+    margin-bottom: 10px;
+    margin-top : 10px;
+    border: 1px solid gray;
+}
+
 @media only screen and (max-width: 600px) {
-  .text-bottom-mobile {
+    .text-bottom-mobile {
     position: absolute;
     bottom: 0;
     padding: 0px 5px 0px 15px;
