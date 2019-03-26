@@ -123,19 +123,42 @@ $(document).ready(function () {
 
 
     //Visitors IP
-    $.ajax({
-        url: "https://ipapi.co/json/",
-        method: "get",
-        success: function (ipInfo) {
-            ipInfo.last_visit = new Date();
-            console.log(ipInfo);
-
-            $.getJSON("data/ip.json", function (data) {
-                console.log(data);
-            });
-
+    $.ajaxSetup({
+        beforeSend: function (xhr) {
+            if (xhr.overrideMimeType) {
+                xhr.overrideMimeType("application/json");
+            }
         }
     });
+    //$.ajax({
+    //    url: "https://ipapi.co/json/",
+    //    method: "get",
+    //    success: function (ipInfo) {
+    //        ipInfo.last_visit = new Date();
+    //        console.log(ipInfo);
+
+    //        $.getJSON("data/ip.json", function (ipJson) {
+
+    //            ipJson.total_visits++;
+
+    //            var found = false;
+
+    //            for (var i = 0; i < ipJson.ip.length; i++) {
+    //                if (ipJson.ip[i].ip === ipInfo.ip) {
+    //                    found = true;
+    //                    ipJson.ip[i].last_visit = new Date();
+    //                    ipJson.ip[i].visit_count ++;
+    //                }
+    //            }
+
+    //            if (!found) {
+    //            }
+
+    //            console.log(ipJson);
+    //        });
+
+    //    }
+    //});
 
     // Ip count
     
