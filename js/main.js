@@ -35,16 +35,28 @@ $(document).ready(function () {
     // Typed JS TRIGGER
     $('.home-page .middle-c h3 span').typed({
         strings: [
-            'Programmer',
-            'Software Engineer',
-            'Full Stack Developer',
-            'ASP.NET Developer',
-            'Angular Developer',
-            'Mobile Application Developer',
+            'Programmer 😁',
+            'Creative Doer 🤔',
+            'Software Engineer 😎 ',
+            'Full Stack Developer 😍',
+            'ASP.NET Developer 🤩',
+            'Angular Developer 🤗',
+            'Mobile Application Developer 😤',
+            'Little Bit Crazy 🤡',
         ],
         loop: true,
         startDelay: 1e3,
         backDelay: 3e3
+    });
+
+    // Typed JS TRIGGER
+    $('.home-page .middle-c h1 span').typed({
+        strings: [
+            'CODE',
+        ],
+        loop: true,
+        startDelay: 1e3,
+        backDelay: 4e3
     });
 
     // CUSTOM SCROLLBAR JS TRIGGER
