@@ -5,6 +5,9 @@
 $(document).ready(function () {
     'use strict';
 
+    // Prevent Cache
+    //window.location.reload(true) 
+
     //// PRELOADER TRIGGER
     $(window).on('load', function () {
         $('.loading').animate(
