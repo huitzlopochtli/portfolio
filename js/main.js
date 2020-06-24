@@ -38,14 +38,12 @@ $(document).ready(function () {
     // Typed JS TRIGGER
     $('.home-page .middle-c h3 span').typed({
         strings: [
-            'Programmer 😁',
-            'Creative Doer 🤔',
-            'Software Engineer 😎 ',
-            'Full Stack Developer 😍',
-            'ASP.NET Developer 🤩',
-            'Angular Developer 🤗',
-            'Mobile Application Developer 😤',
-            'Little Bit Crazy 🤡',
+            'Programmer',
+            'Tech Enthusiast',
+            'Creative Doer',
+            'Software Engineer ',
+            'Full Stack Developer',
+            'Mobile Application Developer',
         ],
         loop: true,
         startDelay: 1e3,
